@@ -35,18 +35,19 @@ function updateDateWeek() {
     document.getElementById('updateDate').innerHTML =
         `<span class="text-[22px]">${day} ,</span><br>
          <span class="text-[22px] font-bold">${fullDate}</span>`;
+        //  <span class="text-[22px] font-bold">${time}</span>
     // console.log(day);
     // console.log(fullDate);
     return time;
 };
 
 updateDateWeek();
+setInterval(updateDateWeek, 1000);
 
 
 // Attach event listeners to all "Completed" buttons
 document.querySelectorAll('.completeBtn').forEach((button) => {
     button.addEventListener('click', taskComplete);
-
 });
 
 
@@ -57,20 +58,17 @@ function taskComplete(event) {
     /* ----- Disable button after click ----- */
     const completeBtn = event.target;
     completeBtn.disabled = true;
-    /* 
-        // Get the closest card
-        const card = completeBtn.closest('.taskName');
-        console.log(card);
-    
-        // Get task title
-        const taskTitle = card.querySelector('h2').innerText; */
+
+    /* ----- Change Task heading text after click ----- */
+    const card = completeBtn.closest('.taskName');
+    const taskTitle = card.querySelector('h2').innerText;
 
     /* ----- Show active log ----- */
     const activeLog = document.getElementById('activeLog');
     activeLog.innerHTML +=
         `<div class="p-2.5 m-6 bg-[#F4F7FF] rounded-2xl">
-         <p>You have Complete tanu at ${updateDateWeek()}</p>
-     </div>`;
+         <p>You have Complete ${taskTitle} at ${updateDateWeek()}</p>
+        </div>`;
 
     /* ----- Decrease vlalue of active task ----- */
     const numDecrease = document.getElementById('numDecrease');
@@ -86,7 +84,7 @@ function taskComplete(event) {
 
 function clearHistory() {
     const activeLog = document.getElementById('activeLog');
-    activeLog.innerHTML = ''; 
+    activeLog.innerHTML = '';
 };
 
 
