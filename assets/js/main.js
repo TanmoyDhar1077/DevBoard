@@ -53,7 +53,7 @@ document.querySelectorAll('.completeBtn').forEach((button) => {
 
 // Click Button to show Active log
 function taskComplete(event) {
-    alert('Wow! Your Task Completed');
+    alert('Wow! Your Completed This Task');
 
     /* ----- Disable button after click ----- */
     const completeBtn = event.target;
