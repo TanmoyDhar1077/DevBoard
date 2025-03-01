@@ -21,7 +21,7 @@
             <div class="flex items-center gap-12">
                 <div class="flex items-center gap-2 bg-[#F4F7FF] rounded-[32px] px-4 py-2">
                     <img src="./assets/image/checkbox.png" alt="checkbox">
-                    <h2 id="numCount" class="font-bold text-4xl">23</h2>
+                    <h2 id="numIncrease" class="font-bold text-4xl">23</h2>
                 </div>
                 <button id="themeBtn"
                     class="flex items-center justify-center h-[64px] w-[64px] bg-[#F4F7FF] rounded-[50%]">
@@ -43,10 +43,10 @@
                         </div>
                         <div class="flex flex-col gap-2">
                             <h2 class="text-base font-medium">Task Assigned</h2>
-                            <h2 class="font-bold text-4xl">6</h2>
+                            <h2 id="numDecrease" class="font-bold text-4xl">6</h2>
                         </div>
                     </div>
-                    <!-- Question & Answer Part -->
+                    <!-- Question & Answer Part Button-->
                     <a href="./questions.html" class="for-hover">
                         <div class="flex gap-6 items-center p-6  h-[128px] rounded-xl bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8]"">
                             <img src=" ./assets/image/board.png" alt="">
@@ -69,7 +69,7 @@
                 <div class="flex flex-wrap justify-evenly items-center gap-y-9 pt-6">
                     <!-- Card 1 -->
                     <div class="flex flex-col justify-between bg-[#F4F7FF] h-[317px] w-[342px] rounded-xl p-6">
-                        <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-4 taskName">
                             <!-- Label -->
                             <div class="bg-white text-[#00303C] px-4 py-2 rounded-lg self-start">
                                 ShopEase
@@ -87,12 +87,12 @@
                                 Deadline <br>
                                 <span class="text-[#00303C] font-medium">21 March 2025</span>
                             </p>
-                            <button id="completeBtn" class="btn btn-primary py-[10px] px-5 font-medium text-white">Completed</button>
+                            <button class="completeBtn btn btn-primary py-[10px] px-5 font-medium text-white">Completed</button>
                         </div>
                     </div>
                     <!-- Card 2 -->
                     <div class="flex flex-col justify-between bg-[#F4F7FF] h-[317px] w-[342px] rounded-xl p-6">
-                        <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-4 taskName">
                             <!-- Label -->
                             <div class="bg-white text-[#00303C] px-4 py-2 rounded-lg self-start">
                                 CloudSync
@@ -110,12 +110,12 @@
                                 Deadline <br>
                                 <span class="text-[#00303C] font-medium">21 March 2025</span>
                             </p>
-                            <button id="completeBtn" class="btn btn-primary py-[10px] px-5 font-medium text-white">Completed</button>
+                            <button class="completeBtn btn btn-primary py-[10px] px-5 font-medium text-white">Completed</button>
                         </div>
                     </div>
                     <!-- Card 3 -->
                     <div class="flex flex-col justify-between bg-[#F4F7FF] h-[317px] w-[342px] rounded-xl p-6">
-                        <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-4 taskName">
                             <!-- Label -->
                             <div class="bg-white text-[#00303C] px-4 py-2 rounded-lg self-start">
                                 SwiftPay
@@ -134,12 +134,12 @@
                                 Deadline <br>
                                 <span class="text-[#00303C] font-medium">21 March 2025</span>
                             </p>
-                            <button class="btn btn-primary py-[10px] px-5 font-medium text-white">Completed</button>
+                            <button class="completeBtn btn btn-primary py-[10px] px-5 font-medium text-white">Completed</button>
                         </div>
                     </div>
                     <!-- Card 4 -->
                     <div class="flex flex-col justify-between bg-[#F4F7FF] h-[317px] w-[342px] rounded-xl p-6">
-                        <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-4 taskName">
                             <!-- Label -->
                             <div class="bg-white text-[#00303C] px-4 py-2 rounded-lg self-start">
                                 Meta
@@ -158,12 +158,12 @@
                                 Deadline <br>
                                 <span class="text-[#00303C] font-medium">21 March 2025</span>
                             </p>
-                            <button class="btn btn-primary py-[10px] px-5 font-medium text-white">Completed</button>
+                            <button class="completeBtn btn btn-primary py-[10px] px-5 font-medium text-white">Completed</button>
                         </div>
                     </div>
                     <!-- Card 5 -->
                     <div class="flex flex-col justify-between bg-[#F4F7FF] h-[317px] w-[342px] rounded-xl p-6">
-                        <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-4 taskName">
                             <!-- Label -->
                             <div class="bg-white text-[#00303C] px-4 py-2 rounded-lg self-start">
                                 Google LLC
@@ -182,12 +182,12 @@
                                 Deadline <br>
                                 <span class="text-[#00303C] font-medium">21 March 2025</span>
                             </p>
-                            <button class="btn btn-primary py-[10px] px-5 font-medium text-white">Completed</button>
+                            <button class="completeBtn btn btn-primary py-[10px] px-5 font-medium text-white">Completed</button>
                         </div>
                     </div>
                     <!-- Card 6 -->
                     <div class="flex flex-col justify-between bg-[#F4F7FF] h-[317px] w-[342px] rounded-xl p-6">
-                        <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-4 taskName">
                             <!-- Label -->
                             <div class="bg-white text-[#00303C] px-4 py-2 rounded-lg self-start">
                                 Glassdoar
@@ -206,7 +206,7 @@
                                 Deadline <br>
                                 <span class="text-[#00303C] font-medium">21 March 2025</span>
                             </p>
-                            <button class="btn btn-primary py-[10px] px-5 font-medium text-white">Completed</button>
+                            <button class="completeBtn btn btn-primary py-[10px] px-5 font-medium text-white">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -220,10 +220,12 @@
                         <img src="./assets/image/activity.png" alt="">
                         <h2 class="text-xl font-medium">Active Log</h2>
                     </div>
-                    <button class="btn btn-primary text-white font-medium self-center ">Clear History</button>
+                    <button onclick="clearHistory()" class="btn btn-primary text-white font-medium self-center ">Clear History</button>
                 </div>
-                <div id="completeBtn" class="p-2.5 m-6 bg-[#F4F7FF] rounded-2xl hidden">
-                    <p>You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+                <div id="activeLog">
+                    <!-- <div class="p-2.5 m-6 bg-[#F4F7FF] rounded-2xl">
+                        <p>You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+                    </div> -->
                 </div>
             </div>
         </div>

@@ -9,3 +9,9 @@ body {
 header .btn {
     height: 4rem;
 }
+
+.btn:disabled {
+    cursor: not-allowed;
+    pointer-events: visibleFill;
+    opacity: 0.5 ;
+}

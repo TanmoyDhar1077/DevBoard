@@ -24,14 +24,69 @@ function updateDateWeek() {
         year: 'numeric'
     });
 
+    // Get the current time
+    const time = now.toLocaleTimeString('en-US', {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: true
+    });
+
     document.getElementById('updateDate').innerHTML =
         `<span class="text-[22px]">${day} ,</span><br>
          <span class="text-[22px] font-bold">${fullDate}</span>`;
     // console.log(day);
     // console.log(fullDate);
+    return time;
 };
 
 updateDateWeek();
 
+
+// Attach event listeners to all "Completed" buttons
+document.querySelectorAll('.completeBtn').forEach((button) => {
+    button.addEventListener('click', taskComplete);
+
+});
+
+
 // Click Button to show Active log
+function taskComplete(event) {
+    alert('Wow! Your Task Completed');
+
+    /* ----- Disable button after click ----- */
+    const completeBtn = event.target;
+    completeBtn.disabled = true;
+    /* 
+        // Get the closest card
+        const card = completeBtn.closest('.taskName');
+        console.log(card);
+    
+        // Get task title
+        const taskTitle = card.querySelector('h2').innerText; */
+
+    /* ----- Show active log ----- */
+    const activeLog = document.getElementById('activeLog');
+    activeLog.innerHTML +=
+        `<div class="p-2.5 m-6 bg-[#F4F7FF] rounded-2xl">
+         <p>You have Complete tanu at ${updateDateWeek()}</p>
+     </div>`;
+
+    /* ----- Decrease vlalue of active task ----- */
+    const numDecrease = document.getElementById('numDecrease');
+    numDecrease.innerHTML = parseInt(numDecrease.innerText
+    ) - 1;
+
+    /* -----  Increase vlalue of active task ----- */
+    const numIncrease = document.getElementById('numIncrease');
+    numIncrease.innerHTML = parseInt(numIncrease.innerText
+    ) + 1;
+};
+
+
+function clearHistory() {
+    const activeLog = document.getElementById('activeLog');
+    activeLog.innerHTML = ''; 
+};
+
 
