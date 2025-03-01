@@ -36,15 +36,17 @@
                 <!-- Top 3 Card -->
                 <div
                     class="grid grid-cols-[1fr_2fr_1fr] items-center gap-6 justify-evenly px-7 py-6 border-b border-dashed border-[#3752fd33]">
+                    <!-- Task Assigned -->
                     <div class="flex items-center gap-5 bg-[#F4F7FF] h-[128px] rounded-xl p-6">
                         <div class="flex items-center justify-center h-[64px] w-[64px] bg-[#ffffff] rounded-[50%]">
                             <img src="./assets/image/checkbox.png" alt="">
                         </div>
                         <div class="flex flex-col gap-2">
                             <h2 class="text-base font-medium">Task Assigned</h2>
-                            <h2 class="font-bold text-4xl">0</h2>
+                            <h2 class="font-bold text-4xl">6</h2>
                         </div>
                     </div>
+                    <!-- Question & Answer Part -->
                     <a href="./questions.html" class="for-hover">
                         <div class="flex gap-6 items-center p-6  h-[128px] rounded-xl bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8]"">
                             <img src=" ./assets/image/board.png" alt="">
@@ -52,13 +54,14 @@
                             </h2>
                         </div>
                     </a>
+                    <!-- Date & Time Part -->
                     <div class="flex items-center gap-5 bg-[#F4F7FF] h-[128px] rounded-xl p-6">
                         <div class="flex items-center justify-center h-[64px] w-[64px] bg-[#ffffff] rounded-[50%]">
                             <img src="./assets/image/calender.png" alt="">
                         </div>
-                        <h2>
-                            <span class="text-[22px]">Wed ,</span><br>
-                            <span class="text-[22px] font-bold">Jul 28 2025</span>
+                        <h2 id="updateDate">
+                            <!-- <span class="text-[22px]">Wed ,</span><br>
+                            <span class="text-[22px] font-bold">Jul 28 2025</span> -->
                         </h2>
                     </div>
                 </div>
@@ -84,7 +87,7 @@
                                 Deadline <br>
                                 <span class="text-[#00303C] font-medium">21 March 2025</span>
                             </p>
-                            <button class="btn btn-primary py-[10px] px-5 font-medium text-white">Completed</button>
+                            <button id="completeBtn" class="btn btn-primary py-[10px] px-5 font-medium text-white">Completed</button>
                         </div>
                     </div>
                     <!-- Card 2 -->
@@ -107,7 +110,7 @@
                                 Deadline <br>
                                 <span class="text-[#00303C] font-medium">21 March 2025</span>
                             </p>
-                            <button class="btn btn-primary py-[10px] px-5 font-medium text-white">Completed</button>
+                            <button id="completeBtn" class="btn btn-primary py-[10px] px-5 font-medium text-white">Completed</button>
                         </div>
                     </div>
                     <!-- Card 3 -->
@@ -211,14 +214,15 @@
             </div>
             <!-- Active Log -->
             <div class="bg-white w-full md:w-[366px] h-[918px] rounded-2xl">
-                <div class="flex flex-col items-center gap-4 justify-center border-b border-dashed border-[#3752fd33] p-6">
+                <div
+                    class="flex flex-col items-center gap-4 justify-center border-b border-dashed border-[#3752fd33] p-6">
                     <div class="flex items-center gap-4 justify-center">
                         <img src="./assets/image/activity.png" alt="">
                         <h2 class="text-xl font-medium">Active Log</h2>
                     </div>
                     <button class="btn btn-primary text-white font-medium self-center ">Clear History</button>
                 </div>
-                <div class="p-2.5 m-6 bg-[#F4F7FF] rounded-2xl hidden">
+                <div id="completeBtn" class="p-2.5 m-6 bg-[#F4F7FF] rounded-2xl hidden">
                     <p>You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
                 </div>
             </div>
