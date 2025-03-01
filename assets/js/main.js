@@ -67,7 +67,7 @@ function taskComplete(event) {
     const activeLog = document.getElementById('activeLog');
     activeLog.innerHTML +=
         `<div class="p-2.5 m-6 bg-[#F4F7FF] rounded-2xl">
-         <p>You have Complete ${taskTitle} at ${updateDateWeek()}</p>
+         <p>You have Complete the task ${taskTitle} at ${updateDateWeek()}</p>
         </div>`;
 
     /* ----- Decrease vlalue of active task ----- */
