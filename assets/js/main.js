@@ -92,7 +92,7 @@ function taskComplete(event) {
     }
 };
 
-
+// For clear all task in active log
 function clearHistory() {
     const activeLog = document.getElementById('activeLog');
     activeLog.innerHTML = '';
