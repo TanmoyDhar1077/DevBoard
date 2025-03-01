@@ -22,8 +22,9 @@
                     <img src="./assets/image/checkbox.png" alt="checkbox">
                     <h2 id="numCount" class="font-bold text-4xl">23</h2>
                 </div>
-                <button id="themeBtn">
-                    <img src="./assets/image/theme-btn.png" alt="">
+                <button id="themeBtn"
+                    class="flex items-center justify-center h-[64px] w-[64px] bg-[#F4F7FF] rounded-[50%]">
+                    <img src="./assets/image/theme-btn.png" alt="theme-btn">
                 </button>
             </div>
         </div>
@@ -31,6 +32,7 @@
     <main class="container mx-auto pb-5">
         <div class="flex flex-col md:flex-row gap-6">
             <div class="bg-white w-full md:w-[1146px] h-[918px] rounded-2xl">
+                <!-- Top 3 Card -->
                 <div
                     class="grid grid-cols-[1fr_2fr_1fr] items-center gap-6 justify-evenly px-7 py-6 border-b border-dashed border-[#3752fd33]">
                     <div class="flex items-center gap-5 bg-[#F4F7FF] h-[128px] rounded-xl p-6">
@@ -49,30 +51,159 @@
                             </h2>
                         </div>
                     </a>
-                    <div class="bg-[#F4F7FF] h-[128px] rounded-xl">
-
+                    <div class="flex items-center gap-5 bg-[#F4F7FF] h-[128px] rounded-xl p-6">
+                        <div class="flex items-center justify-center h-[64px] w-[64px] bg-[#ffffff] rounded-[50%]">
+                            <img src="./assets/image/calender.png" alt="">
+                        </div>
+                        <h2>
+                            <span class="text-[22px]">Wed ,</span><br>
+                            <span class="text-[22px] font-bold">Jul 28 2025</span>
+                        </h2>
                     </div>
-
-
                 </div>
+                <!-- 6 Cards-->
                 <div class="flex flex-wrap justify-evenly items-center gap-y-9 pt-6">
-                    <div class="bg-[#F4F7FF] h-[317px] w-[342px] rounded-xl">
-
+                    <!-- Card 1 -->
+                    <div class="flex flex-col justify-between bg-[#F4F7FF] h-[317px] w-[342px] rounded-xl p-6">
+                        <div class="flex flex-col gap-4">
+                            <!-- Label -->
+                            <div class="bg-white text-[#00303C] px-4 py-2 rounded-lg self-start">
+                                ShopEase
+                            </div>
+                            <!-- Title -->
+                            <h2 class="text-2xl font-medium">Fix Mobile Button Issue </h2>
+                            <!-- Description -->
+                            <div class="p-4 bg-white rounded-xl w-[294px] h-[92px] overflow-y-scroll">
+                                <p class="text-base opacity-50">Debug using Chrome DevTools, check for overlapping
+                                    elements, and ensure onClick works properly and ensure onClick works properly</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center border-t border-dashed border-[#3752fd33] pt-3">
+                            <p class="text-sm opacity-70">
+                                Deadline <br>
+                                <span class="text-[#00303C] font-medium">21 March 2025</span>
+                            </p>
+                            <button class="btn btn-primary py-[10px] px-5 font-medium text-white">Completed</button>
+                        </div>
                     </div>
-                    <div class="bg-[#F4F7FF] h-[317px] w-[342px] rounded-xl">
-
+                    <!-- Card 2 -->
+                    <div class="flex flex-col justify-between bg-[#F4F7FF] h-[317px] w-[342px] rounded-xl p-6">
+                        <div class="flex flex-col gap-4">
+                            <!-- Label -->
+                            <div class="bg-white text-[#00303C] px-4 py-2 rounded-lg self-start">
+                                CloudSync
+                            </div>
+                            <!-- Title -->
+                            <h2 class="text-2xl font-medium">Add Dark Mode</h2>
+                            <!-- Description -->
+                            <div class="p-4 bg-white rounded-xl w-[294px] h-[92px] overflow-y-scroll">
+                                <p class="text-base opacity-50">Store the user's preference in localStorage, update CSS
+                                    variables dynamically, and apply a smooth transition effect.</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center border-t border-dashed border-[#3752fd33] pt-3">
+                            <p class="text-sm opacity-70">
+                                Deadline <br>
+                                <span class="text-[#00303C] font-medium">21 March 2025</span>
+                            </p>
+                            <button class="btn btn-primary py-[10px] px-5 font-medium text-white">Completed</button>
+                        </div>
                     </div>
-                    <div class="bg-[#F4F7FF] h-[317px] w-[342px] rounded-xl">
-
+                    <!-- Card 3 -->
+                    <div class="flex flex-col justify-between bg-[#F4F7FF] h-[317px] w-[342px] rounded-xl p-6">
+                        <div class="flex flex-col gap-4">
+                            <!-- Label -->
+                            <div class="bg-white text-[#00303C] px-4 py-2 rounded-lg self-start">
+                                SwiftPay
+                            </div>
+                            <!-- Title -->
+                            <h2 class="text-2xl font-medium">Optimize Home page</h2>
+                            <!-- Description -->
+                            <div class="p-4 bg-white rounded-xl w-[294px] h-[92px] overflow-y-scroll">
+                                <p class="text-base opacity-50">Debug using Chrome DevTools, check for overlapping
+                                    elements, and ensure onClick works properly
+                                    and ensure onClick works properly</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center border-t border-dashed border-[#3752fd33] pt-3">
+                            <p class="text-sm opacity-70">
+                                Deadline <br>
+                                <span class="text-[#00303C] font-medium">21 March 2025</span>
+                            </p>
+                            <button class="btn btn-primary py-[10px] px-5 font-medium text-white">Completed</button>
+                        </div>
                     </div>
-                    <div class="bg-[#F4F7FF] h-[317px] w-[342px] rounded-xl">
-
+                    <!-- Card 4 -->
+                    <div class="flex flex-col justify-between bg-[#F4F7FF] h-[317px] w-[342px] rounded-xl p-6">
+                        <div class="flex flex-col gap-4">
+                            <!-- Label -->
+                            <div class="bg-white text-[#00303C] px-4 py-2 rounded-lg self-start">
+                                Meta
+                            </div>
+                            <!-- Title -->
+                            <h2 class="text-2xl font-medium">Add new emoji 🤲</h2>
+                            <!-- Description -->
+                            <div class="p-4 bg-white rounded-xl w-[294px] h-[92px] overflow-y-scroll">
+                                <p class="text-base opacity-50">Debug using Chrome DevTools, check for overlapping
+                                    elements, and ensure onClick works properly
+                                    and ensure onClick works properly</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center border-t border-dashed border-[#3752fd33] pt-3">
+                            <p class="text-sm opacity-70">
+                                Deadline <br>
+                                <span class="text-[#00303C] font-medium">21 March 2025</span>
+                            </p>
+                            <button class="btn btn-primary py-[10px] px-5 font-medium text-white">Completed</button>
+                        </div>
                     </div>
-                    <div class="bg-[#F4F7FF] h-[317px] w-[342px] rounded-xl">
-
+                    <!-- Card 5 -->
+                    <div class="flex flex-col justify-between bg-[#F4F7FF] h-[317px] w-[342px] rounded-xl p-6">
+                        <div class="flex flex-col gap-4">
+                            <!-- Label -->
+                            <div class="bg-white text-[#00303C] px-4 py-2 rounded-lg self-start">
+                                Google LLC
+                            </div>
+                            <!-- Title -->
+                            <h2 class="text-2xl font-medium">Integrate OpenAI API</h2>
+                            <!-- Description -->
+                            <div class="p-4 bg-white rounded-xl w-[294px] h-[92px] overflow-y-scroll">
+                                <Debug class="text-base opacity-50">Debug using Chrome DevTools, check for overlapping
+                                    elements, and ensure onClick works properly
+                                    and ensure onClick works properly</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center border-t border-dashed border-[#3752fd33] pt-3">
+                            <p class="text-sm opacity-70">
+                                Deadline <br>
+                                <span class="text-[#00303C] font-medium">21 March 2025</span>
+                            </p>
+                            <button class="btn btn-primary py-[10px] px-5 font-medium text-white">Completed</button>
+                        </div>
                     </div>
-                    <div class="bg-[#F4F7FF] h-[317px] w-[342px] rounded-xl">
-
+                    <!-- Card 6 -->
+                    <div class="flex flex-col justify-between bg-[#F4F7FF] h-[317px] w-[342px] rounded-xl p-6">
+                        <div class="flex flex-col gap-4">
+                            <!-- Label -->
+                            <div class="bg-white text-[#00303C] px-4 py-2 rounded-lg self-start">
+                                Glassdoar
+                            </div>
+                            <!-- Title -->
+                            <h2 class="text-2xl font-medium">Improve Job searching</h2>
+                            <!-- Description -->
+                            <div class="p-4 bg-white rounded-xl w-[294px] h-[92px] overflow-y-scroll">
+                                <p class="text-base opacity-50">Debug using Chrome DevTools, check for overlapping
+                                    elements, and ensure onClick works properly
+                                    and ensure onClick works properly</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center border-t border-dashed border-[#3752fd33] pt-3">
+                            <p class="text-sm opacity-70">
+                                Deadline <br>
+                                <span class="text-[#00303C] font-medium">21 March 2025</span>
+                            </p>
+                            <button class="btn btn-primary py-[10px] px-5 font-medium text-white">Completed</button>
+                        </div>
                     </div>
                 </div>
 

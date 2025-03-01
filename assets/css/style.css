@@ -2,7 +2,8 @@
 
 body {
     font-family: 'Poppins', sans-serif; 
-    background-color: #F4F7FF;;
+    background-color: #F4F7FF;
+    scroll-behavior: smooth;
 }
 
 header .btn {
