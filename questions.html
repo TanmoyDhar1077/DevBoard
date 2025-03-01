@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+    <link rel="shortcut icon" href="./assets/image/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header class="container mx-auto py-6">
+        <div class="navbar rounded-2xl bg-base-100 flex justify-between items-center py-5 px-9">
+            <a class="btn btn-ghost" href="index.html">
+                <img src="./assets/image/logo.png" alt="logo">
+                <h1><span class="text-4xl font-light">Dev</span><span class="text-4xl font-bold">Board</span></h1>
+            </a>
+            <a href="index.html">
+                <button class="btn btn-primary text-white text-lg">Back To Desk</button>
+            </a>
+        </div>
+    </header>
+    <main class="container mx-auto pb-5">
+        <h2 class="text-center text-2xl font-semibold m-2">Blog</h2>
+        <section>
+            <div class="rounded-xl bg-white m-5">
+                <h1 class="font-semibold p-4">Question-1: What are the different ways to select an element in the DOM?
+                </h1>
+                <hr class="border border-dashed border-[#3752fd33]">
+                <ul class="p-4 opacity-50">
+                    <li>
+                        <code>document.getElementById("id")</code> -> This method is used to select an element by its
+                        id.
+                    </li>
+                    <li>
+                        <code>document.getElementsByClassName("class")</code> -> This method is used to select an
+                        element by its class.
+                    </li>
+                    <li>
+                        <code>document.getElementsByTagName("tag")</code> -> This method is used to select an element by
+                        its tag.
+                    </li>
+                    <li>
+                        <code>document.querySelector("selector")</code> -> This method is used to select an element by
+                        its selector.
+                    </li>
+                    <li>
+                        <code>document.querySelectorAll("selector")</code> -> This method is used to select all elements
+                        by its selector.
+                    </li>
+                </ul>
+
+            </div>
+            <div class="rounded-xl bg-white m-5">
+                <h1 class="font-semibold p-4">Question-2: What is the difference between innerHTML, innerText, and
+                    textContent ?</h1>
+                <hr class="border border-dashed border-[#3752fd33]">
+                <ul class="p-4 opacity-50">
+                    <li>
+                        <code>innerHTML</code> -> This property sets or returns the HTML content (inner HTML) of an element.
+                    </li>
+                    <li>
+                        <code>innerText</code> -> This property sets or returns the text content of the specified node, and all its descendants.
+                    </li>
+                    <li>
+                        <code>innerContent</code> -> This property sets or returns the text content of the specified node, including hidden elements and all its descendants.
+                    </li>
+                </ul>
+            </div>
+            <div class="rounded-xl bg-white m-5">
+                <h1 class="font-semibold p-4">Question-3: What is event delegation in the DOM?</h1>
+                <hr class="border border-dashed border-[#3752fd33]">
+                <p class="p-4 opacity-50">Event delegation is a technique involving adding event listeners to a parent element instead of adding them to the descendant elements. The listener will fire whenever the event is triggered on the descendant elements due to event bubbling up the DOM.
+                </p>
+
+            </div>
+            <div class="rounded-xl bg-white m-5">
+                <h1 class="font-semibold p-4">Question-4: What is event bubbling in the DOM?</h1>
+                <hr class="border border-dashed border-[#3752fd33]">
+                <p class="p-4 opacity-50">
+                    Event bubbling is a type of event propagation where the event first triggers on the innermost target element, and then successively triggers on the ancestors (parents) of the target element in the same nesting hierarchy till it reaches the outermost DOM element.
+                </p>
+            </div>
+            <div class="rounded-xl bg-white m-5">
+                <h1 class="font-semibold p-4">Question-5: How do you create, add, and remove elements using JavaScript?
+                </h1>
+                <hr class="border border-dashed border-[#3752fd33]">
+                <p class="p-4 opacity-50">
+                    To create an element, you can use the <code>document.createElement()</code> method. To add an element, you can use the <code>appendChild()</code> method or the <code>insertBefore()</code> method. To remove an element, you can use the <code>removeChild()</code> method.
+                </p>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
