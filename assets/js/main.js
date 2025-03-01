@@ -42,7 +42,11 @@ function updateDateWeek() {
 };
 
 updateDateWeek();
-setInterval(updateDateWeek, 1000);
+// setInterval(updateDateWeek, 1000);
+
+// Track number of tasks
+let totalTasks = document.querySelectorAll('.taskName').length;
+let completedTasks = 0;
 
 
 // Attach event listeners to all "Completed" buttons
@@ -79,6 +83,13 @@ function taskComplete(event) {
     const numIncrease = document.getElementById('numIncrease');
     numIncrease.innerHTML = parseInt(numIncrease.innerText
     ) + 1;
+
+    completedTasks++; 
+
+    /* ----- Check if all tasks are completed ----- */
+    if (completedTasks === totalTasks) {
+        alert('Congratulations! You have completed all the task');  
+    }
 };
 
 
