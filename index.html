@@ -11,13 +11,23 @@
 </head>
 
 <body>
-    <header>
-        <div class="navbar-end bg-base-100">
-            <a class="btn btn-ghost">
+    <header class="container mx-auto py-6">
+        <div class="navbar rounded-2xl bg-base-100 flex justify-between items-center py-5 px-9">
+            <a class="btn btn-ghost" href="index.html">
                 <img src="./assets/image/logo.png" alt="logo">
-                <h1><span class="text-4xl">Dev</span><span>Board</span></h1>
+                <h1><span class="text-4xl font-light">Dev</span><span class="text-4xl font-bold">Board</span></h1>
             </a>
+            <div class="flex items-center gap-12">
+                <div class="flex items-center gap-2 bg-[#F4F7FF] rounded-[32px] px-4 py-2">
+                    <img src="./assets/image/checkbox.png" alt="checkbox">
+                    <h2 id="numCount" class="font-bold text-4xl">23</h2>
+                </div>
+                <button id="themeBtn">
+                    <img src="./assets/image/theme-btn.png" alt="">
+                </button>
+            </div>
         </div>
+        
     </header>
     <script src="./assets/js/main.js"></script>
 </body>
